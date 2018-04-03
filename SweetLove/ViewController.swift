@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    // MARK: utils
+    func setBackgroundImage() {
+        let bgImg = UIImage()
+    }
+    
 }
 
