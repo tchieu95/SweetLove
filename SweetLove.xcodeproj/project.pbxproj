@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C417DC020786A7C009EC4B4 /* loveBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C417DBF20786A7C009EC4B4 /* loveBG.jpg */; };
+		8CB0E00F2078A3CC00A1D4EF /* loveBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CB0E00E2078A3CC00A1D4EF /* loveBG.jpg */; };
 		8CDEA7D82073D1E90023BDD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDEA7D72073D1E90023BDD6 /* AppDelegate.swift */; };
 		8CDEA7DA2073D1E90023BDD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDEA7D92073D1E90023BDD6 /* ViewController.swift */; };
 		8CDEA7DD2073D1E90023BDD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDEA7DB2073D1E90023BDD6 /* Main.storyboard */; };
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8C417DBF20786A7C009EC4B4 /* loveBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = loveBG.jpg; path = ../../../loveBG.jpg; sourceTree = "<group>"; };
+		8CB0E00E2078A3CC00A1D4EF /* loveBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loveBG.jpg; sourceTree = "<group>"; };
 		8CDEA7D42073D1E90023BDD6 /* SweetLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDEA7D72073D1E90023BDD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CDEA7D92073D1E90023BDD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 		8C417DBE20786A5C009EC4B4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8C417DBF20786A7C009EC4B4 /* loveBG.jpg */,
+				8CB0E00E2078A3CC00A1D4EF /* loveBG.jpg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -254,7 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C417DC020786A7C009EC4B4 /* loveBG.jpg in Resources */,
+				8CB0E00F2078A3CC00A1D4EF /* loveBG.jpg in Resources */,
 				8CDEA7E22073D1E90023BDD6 /* LaunchScreen.storyboard in Resources */,
 				8CDEA7DF2073D1E90023BDD6 /* Assets.xcassets in Resources */,
 				8CDEA7DD2073D1E90023BDD6 /* Main.storyboard in Resources */,
