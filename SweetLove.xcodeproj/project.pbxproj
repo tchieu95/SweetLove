@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E92BB71207EF3FD002556B5 /* UXNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E92BB70207EF3FD002556B5 /* UXNavigationController.swift */; };
 		8CB0E00F2078A3CC00A1D4EF /* loveBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CB0E00E2078A3CC00A1D4EF /* loveBG.jpg */; };
 		8CDEA7D82073D1E90023BDD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDEA7D72073D1E90023BDD6 /* AppDelegate.swift */; };
 		8CDEA7DA2073D1E90023BDD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDEA7D92073D1E90023BDD6 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E92BB70207EF3FD002556B5 /* UXNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXNavigationController.swift; sourceTree = "<group>"; };
 		8CB0E00E2078A3CC00A1D4EF /* loveBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loveBG.jpg; sourceTree = "<group>"; };
 		8CDEA7D42073D1E90023BDD6 /* SweetLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDEA7D72073D1E90023BDD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				8CDEA7DE2073D1E90023BDD6 /* Assets.xcassets */,
 				8CDEA7E02073D1E90023BDD6 /* LaunchScreen.storyboard */,
 				8CDEA7E32073D1E90023BDD6 /* Info.plist */,
+				2E92BB70207EF3FD002556B5 /* UXNavigationController.swift */,
 			);
 			path = SweetLove;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E92BB71207EF3FD002556B5 /* UXNavigationController.swift in Sources */,
 				8CDEA8062073D4FF0023BDD6 /* Utils.swift in Sources */,
 				8CDEA7DA2073D1E90023BDD6 /* ViewController.swift in Sources */,
 				8CDEA7D82073D1E90023BDD6 /* AppDelegate.swift in Sources */,
