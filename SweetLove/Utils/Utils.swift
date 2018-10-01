@@ -20,4 +20,16 @@ class Utils {
         
         return image
     }
+    
+    static func daysBetweenDates(startDate: Date, endDate: Date) -> Int
+    {
+        let calendar = NSCalendar.current
+        
+        let date1 = calendar.startOfDay(for: startDate)
+        let date2 = calendar.startOfDay(for: endDate)
+        
+        let components = calendar.dateComponents([.day], from: date1, to: date2)
+        
+        return components.day!
+    }
 }

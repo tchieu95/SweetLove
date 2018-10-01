@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E08DFFD216258B300553780 /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E08DFFC216258B300553780 /* TopBarView.swift */; };
+		2E08DFFF21625D3500553780 /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E08DFFE21625D3500553780 /* note.png */; };
+		2E08E0012162608000553780 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E08E0002162608000553780 /* setting.png */; };
+		2E08E003216261F800553780 /* Contents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E08E002216261F800553780 /* Contents.swift */; };
+		2E08E0052162629A00553780 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E08E0042162629A00553780 /* Album.swift */; };
+		2E08E0072162632E00553780 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E08E0062162632E00553780 /* MainView.swift */; };
+		2E08E0092162656400553780 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E08E0082162656400553780 /* circle.png */; };
+		2E08E00B21626A8500553780 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E08E00A21626A8500553780 /* Settings.swift */; };
 		2E92BB71207EF3FD002556B5 /* UXNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E92BB70207EF3FD002556B5 /* UXNavigationController.swift */; };
 		8CB0E00F2078A3CC00A1D4EF /* loveBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CB0E00E2078A3CC00A1D4EF /* loveBG.jpg */; };
 		8CDEA7D82073D1E90023BDD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDEA7D72073D1E90023BDD6 /* AppDelegate.swift */; };
@@ -37,6 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E08DFFC216258B300553780 /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
+		2E08DFFE21625D3500553780 /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
+		2E08E0002162608000553780 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
+		2E08E002216261F800553780 /* Contents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contents.swift; sourceTree = "<group>"; };
+		2E08E0042162629A00553780 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		2E08E0062162632E00553780 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2E08E0082162656400553780 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		2E08E00A21626A8500553780 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		2E92BB70207EF3FD002556B5 /* UXNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXNavigationController.swift; sourceTree = "<group>"; };
 		8CB0E00E2078A3CC00A1D4EF /* loveBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loveBG.jpg; sourceTree = "<group>"; };
 		8CDEA7D42073D1E90023BDD6 /* SweetLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +99,9 @@
 		8C417DBE20786A5C009EC4B4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2E08E0002162608000553780 /* setting.png */,
+				2E08DFFE21625D3500553780 /* note.png */,
+				2E08E0082162656400553780 /* circle.png */,
 				8CB0E00E2078A3CC00A1D4EF /* loveBG.jpg */,
 			);
 			path = Resources;
@@ -115,6 +134,11 @@
 				8CDEA8072073D8E80023BDD6 /* Utils */,
 				8CDEA7D72073D1E90023BDD6 /* AppDelegate.swift */,
 				8CDEA7D92073D1E90023BDD6 /* ViewController.swift */,
+				2E08DFFC216258B300553780 /* TopBarView.swift */,
+				2E08E0062162632E00553780 /* MainView.swift */,
+				2E08E002216261F800553780 /* Contents.swift */,
+				2E08E00A21626A8500553780 /* Settings.swift */,
+				2E08E0042162629A00553780 /* Album.swift */,
 				8CDEA7DB2073D1E90023BDD6 /* Main.storyboard */,
 				8CDEA7DE2073D1E90023BDD6 /* Assets.xcassets */,
 				8CDEA7E02073D1E90023BDD6 /* LaunchScreen.storyboard */,
@@ -258,7 +282,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CB0E00F2078A3CC00A1D4EF /* loveBG.jpg in Resources */,
+				2E08DFFF21625D3500553780 /* note.png in Resources */,
+				2E08E0012162608000553780 /* setting.png in Resources */,
 				8CDEA7E22073D1E90023BDD6 /* LaunchScreen.storyboard in Resources */,
+				2E08E0092162656400553780 /* circle.png in Resources */,
 				8CDEA7DF2073D1E90023BDD6 /* Assets.xcassets in Resources */,
 				8CDEA7DD2073D1E90023BDD6 /* Main.storyboard in Resources */,
 			);
@@ -285,9 +312,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E08DFFD216258B300553780 /* TopBarView.swift in Sources */,
+				2E08E003216261F800553780 /* Contents.swift in Sources */,
 				2E92BB71207EF3FD002556B5 /* UXNavigationController.swift in Sources */,
 				8CDEA8062073D4FF0023BDD6 /* Utils.swift in Sources */,
 				8CDEA7DA2073D1E90023BDD6 /* ViewController.swift in Sources */,
+				2E08E0052162629A00553780 /* Album.swift in Sources */,
+				2E08E00B21626A8500553780 /* Settings.swift in Sources */,
+				2E08E0072162632E00553780 /* MainView.swift in Sources */,
 				8CDEA7D82073D1E90023BDD6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,7 +487,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 64Q6DS5Y8C;
+				DEVELOPMENT_TEAM = E7K3499NVV;
 				INFOPLIST_FILE = SweetLove/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HCMUS.SweetLove;
@@ -470,7 +502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 64Q6DS5Y8C;
+				DEVELOPMENT_TEAM = E7K3499NVV;
 				INFOPLIST_FILE = SweetLove/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HCMUS.SweetLove;
