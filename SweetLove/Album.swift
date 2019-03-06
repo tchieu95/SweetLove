@@ -17,4 +17,8 @@ class Album : UICollectionView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    
+    func setUpAlbum() {
+        backgroundColor = UIColor.green
+    }
 }

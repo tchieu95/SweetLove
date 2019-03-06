@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         setBackgroundImage()
         setUpTopView()
+        setUpContents()
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,19 +32,20 @@ class ViewController: UIViewController {
     func setBackgroundImage() {
         let bgImg = UIImage(named: "loveBG.jpg")
         backgroundImgv.image = bgImg;
-        backgroundImgv.frame = self.view.frame;
-        self.view.addSubview(backgroundImgv)
+        backgroundImgv.frame = view.frame;
+        view.addSubview(backgroundImgv)
     }
     
     func setUpTopView() {
         topView = TopBarView.init(frame: CGRect(x: 0, y: UIApplication.shared.statusBarFrame.size.height + 10, width: UIScreen.main.bounds.size.width, height: 36))
-        self.view.addSubview(topView!)
+        view.addSubview(topView!)
     }
     
     func setUpContents() {
-        contents = Contents.init(frame: CGRect(x: 0, y: (topView?.frame.maxY)!, width: self.view.frame.width, height: self.view.frame.height - (topView?.frame.maxY)!))
-        
-        self.view.addSubview(contents!)
+        contents = Contents.init(frame: CGRect(x: 0, y: (topView?.frame.maxY)! + 5, width: self.view.frame.width, height: self.view.frame.height - (topView?.frame.maxY)!))
+
+        contents!.setUpContents()
+        view.addSubview(contents!)
     }
 }
 
