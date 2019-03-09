@@ -11,7 +11,7 @@ import UIKit
 class Contents : UIScrollView {
     
     var mainView: MainView?
-    var album: Album?
+    var memorys: Memorys?
     var settings: Settings?
     
     override init(frame: CGRect) {
@@ -27,10 +27,10 @@ class Contents : UIScrollView {
         
         let width = frame.size.width
         
-        // init album
-        album = Album.init(frame: CGRect(x: 0, y: 0, width: width, height: frame.size.height), collectionViewLayout: .init())
-        album?.setUpAlbum()
-        addSubview(album!)
+        // init memorys
+        memorys = Memorys.init(frame: CGRect(x: 0, y: 0, width: width, height: frame.size.height))
+        memorys?.setUpMemorys()
+        addSubview(memorys!)
         
         // init mainview
         mainView = MainView.init(frame: CGRect(x: width, y: 0, width: width, height: frame.size.height))
