@@ -10,18 +10,16 @@ import UIKit
 
 class MainView : UIView {
     let avtWidth: CGFloat = 100.0
-    let avtHoriPadding: CGFloat = 30.0
-    let botPadding: CGFloat = 100.0
-    let circleHoriPadding: CGFloat = 70
     
     var circle: UIView?
     var heart: UIImageView?
     
-    var leftAvt: UIImageView?
+    var leftAvt: UIButton?
     var leftName: UILabel?
     
-    var rightAvt: UIImageView?
+    var rightAvt: UIButton?
     var rightName: UILabel?
+
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -35,12 +33,14 @@ class MainView : UIView {
         setUpCountDaysView()
         setUpAvts()
         setUpNames()
+        
+
     }
     
     func setUpCountDaysView() {
-        let circleWidth: CGFloat = frame.size.width - 2.0 * circleHoriPadding;
+        let circleWidth: CGFloat = frame.size.width - 2.0 * PaddingHelper.circleHoriPadding;
         
-        circle = UIView.init(frame: CGRect(x: circleHoriPadding, y: 0, width: circleWidth, height: circleWidth))
+        circle = UIView.init(frame: CGRect(x: PaddingHelper.circleHoriPadding, y: 0, width: circleWidth, height: circleWidth))
         circle?.layer.borderColor = UIColor.green.cgColor
         circle?.layer.cornerRadius = circleWidth / 2.0
         circle?.layer.borderWidth = 5
@@ -51,28 +51,30 @@ class MainView : UIView {
     func setUpAvts() {
         let width = frame.size.width
         let height = frame.size.height
-        let avtYPos: CGFloat = height - botPadding - avtWidth
+        let avtYPos: CGFloat = height - PaddingHelper.botPadding - avtWidth
         
-        leftAvt = UIImageView.init(frame: CGRect(x: avtHoriPadding, y: avtYPos, width: avtWidth, height: avtWidth))
-        leftAvt?.image = UIImage.init(named: "Man.png")
+        leftAvt = UIButton.init(frame: CGRect(x: PaddingHelper.avtHoriPadding, y: avtYPos, width: avtWidth, height: avtWidth))
+        leftAvt?.setImage(UIImage.init(named: "Man.png"), for: .normal)
+        leftAvt?.addTarget(self, action: #selector(self.handleLeftAvtTap), for: .touchDown)
         addSubview(leftAvt!)
         
-        rightAvt = UIImageView.init(frame: CGRect(x: (width - avtWidth - avtHoriPadding), y: avtYPos, width: avtWidth, height: avtWidth))
-        rightAvt?.image = UIImage.init(named: "Woman.png")
+        rightAvt = UIButton.init(frame: CGRect(x: (width - avtWidth - PaddingHelper.avtHoriPadding), y: avtYPos, width: avtWidth, height: avtWidth))
+        rightAvt?.setImage(UIImage.init(named: "Woman.png"), for: .normal)
+        rightAvt?.addTarget(self, action: #selector(self.handleRightAvtTap), for: .touchDown)
         addSubview(rightAvt!)
     }
     
     func setUpNames() {
         let topAvtPadding: CGFloat = 10.0
-        let labelWidth: CGFloat = 2 * avtHoriPadding + avtWidth
-        let labelYPos = frame.size.height - botPadding + topAvtPadding;
+        let labelWidth: CGFloat = 2 * PaddingHelper.avtHoriPadding + avtWidth
+        let labelYPos = frame.size.height - PaddingHelper.botPadding + topAvtPadding;
         leftName = UILabel.init(frame: CGRect(x: 0, y: labelYPos, width: labelWidth, height: 20))
         leftName?.text = "Bơ-man"
         leftName?.textAlignment = .center
         leftName?.textColor = UIColor.white
         addSubview(leftName!)
         
-        rightName = UILabel.init(frame: CGRect(x: rightAvt!.frame.minX - avtHoriPadding, y: labelYPos, width: labelWidth, height: 20))
+        rightName = UILabel.init(frame: CGRect(x: rightAvt!.frame.minX - PaddingHelper.avtHoriPadding, y: labelYPos, width: labelWidth, height: 20))
         rightName?.text = "Gấu xù"
         rightName?.textAlignment = .center
         rightName?.textColor = UIColor.white
@@ -81,5 +83,33 @@ class MainView : UIView {
     
     override func draw(_ rect: CGRect) {
         super.draw(rect)
+    }
+    
+    
+    @objc func handleLeftAvtTap() {
+        showAvatarActionSheet()
+    }
+    
+    
+    @objc func handleRightAvtTap() {
+        showAvatarActionSheet()
+    }
+    
+    func showAvatarActionSheet() {
+        let alert = UIAlertController.init(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Change avatar", style: .default , handler:{ (UIAlertAction) in
+            print("User click Change avatar button")
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Change name", style: .default , handler:{ (UIAlertAction) in
+            print("User click Change Name button")
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (UIAlertAction) in
+            print("User click Cancel button")
+        }))
+        
+        UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)
     }
 }
