@@ -30,20 +30,20 @@ class Contents : UIScrollView {
         // init album
         album = Album.init(frame: CGRect(x: 0, y: 0, width: width, height: frame.size.height), collectionViewLayout: .init())
         album?.setUpAlbum()
+        addSubview(album!)
         
         // init mainview
         mainView = MainView.init(frame: CGRect(x: width, y: 0, width: width, height: frame.size.height))
         mainView?.setUpMainView()
+        addSubview(mainView!)
         
         // init settings
         settings = Settings.init(frame: CGRect(x: 2 * width, y: 0, width: width, height: frame.size.height))
         settings?.setUpSettings()
+        addSubview(settings!)
         
         contentSize = CGSize(width: 3 * width, height: frame.size.height)
         setContentOffset(CGPoint(x: width, y: 0), animated: false)
-        addSubview(album!)
-        addSubview(mainView!)
-        addSubview(settings!)
     }
     
 }
