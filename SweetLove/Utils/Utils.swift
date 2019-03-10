@@ -32,4 +32,8 @@ class Utils {
         
         return components.day!
     }
+    
+    static func presentViewController(viewController: UIViewController, animated: Bool, completion: (() -> Void)? = nil) {
+        UIApplication.shared.keyWindow?.rootViewController?.present(viewController, animated: animated, completion: completion)
+    }
 }

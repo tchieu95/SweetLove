@@ -110,6 +110,6 @@ class MainView : UIView {
             print("User click Cancel button")
         }))
         
-        UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)
+        Utils.presentViewController(viewController: alert, animated: true)
     }
 }
