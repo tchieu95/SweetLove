@@ -24,6 +24,7 @@ class Memorys : UIView {
     func setUpMemorys() {
         addMemoryBtn = UIButton.init(frame: CGRect(x: frame.size.width / 2 - iconAddWidth / 2, y: frame.size.height - PaddingHelper.botPadding, width: iconAddWidth, height: iconAddWidth))
         addMemoryBtn?.setImage(UIImage.init(named: "addMemory.png"), for: .normal)
+        addMemoryBtn?.addTarget(self, action: #selector(self.addMemoryTap), for: .touchDown)
         addSubview(addMemoryBtn!)
     }
     
@@ -32,7 +33,9 @@ class Memorys : UIView {
     }
     
     @objc func addMemoryTap() {
-        print("User add new memory")
+        let addMemVC = AddMemoryViewController.init()
+        Utils.presentViewController(viewController: addMemVC, animated: true)
+        
     }
 }
 

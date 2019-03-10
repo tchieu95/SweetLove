@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		292795A0222FC4CE00ED8A73 /* Woman.png in Resources */ = {isa = PBXBuildFile; fileRef = 2927959E222FC4CE00ED8A73 /* Woman.png */; };
 		292795A1222FC4CE00ED8A73 /* Man.png in Resources */ = {isa = PBXBuildFile; fileRef = 2927959F222FC4CE00ED8A73 /* Man.png */; };
+		296D76C02234C4F800358FB0 /* AddMemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296D76BF2234C4F800358FB0 /* AddMemoryViewController.swift */; };
 		29AC61C822339637002563A9 /* addMemory.png in Resources */ = {isa = PBXBuildFile; fileRef = 29AC61C722339637002563A9 /* addMemory.png */; };
 		29AC61CA22339686002563A9 /* PaddingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AC61C922339686002563A9 /* PaddingHelper.swift */; };
 		2E08DFFD216258B300553780 /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E08DFFC216258B300553780 /* TopBarView.swift */; };
@@ -19,7 +20,6 @@
 		2E08E0072162632E00553780 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E08E0062162632E00553780 /* MainView.swift */; };
 		2E08E0092162656400553780 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E08E0082162656400553780 /* circle.png */; };
 		2E08E00B21626A8500553780 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E08E00A21626A8500553780 /* Settings.swift */; };
-		2E92BB71207EF3FD002556B5 /* UXNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E92BB70207EF3FD002556B5 /* UXNavigationController.swift */; };
 		8CB0E00F2078A3CC00A1D4EF /* loveBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CB0E00E2078A3CC00A1D4EF /* loveBG.jpg */; };
 		8CDEA7D82073D1E90023BDD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDEA7D72073D1E90023BDD6 /* AppDelegate.swift */; };
 		8CDEA7DA2073D1E90023BDD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDEA7D92073D1E90023BDD6 /* ViewController.swift */; };
@@ -51,6 +51,7 @@
 /* Begin PBXFileReference section */
 		2927959E222FC4CE00ED8A73 /* Woman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Woman.png; sourceTree = "<group>"; };
 		2927959F222FC4CE00ED8A73 /* Man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Man.png; sourceTree = "<group>"; };
+		296D76BF2234C4F800358FB0 /* AddMemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemoryViewController.swift; sourceTree = "<group>"; };
 		29AC61C722339637002563A9 /* addMemory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addMemory.png; sourceTree = "<group>"; };
 		29AC61C922339686002563A9 /* PaddingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingHelper.swift; sourceTree = "<group>"; };
 		2E08DFFC216258B300553780 /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 		2E08E0062162632E00553780 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2E08E0082162656400553780 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
 		2E08E00A21626A8500553780 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		2E92BB70207EF3FD002556B5 /* UXNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXNavigationController.swift; sourceTree = "<group>"; };
 		8CB0E00E2078A3CC00A1D4EF /* loveBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loveBG.jpg; sourceTree = "<group>"; };
 		8CDEA7D42073D1E90023BDD6 /* SweetLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDEA7D72073D1E90023BDD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -150,11 +150,11 @@
 				2E08E002216261F800553780 /* Contents.swift */,
 				2E08E00A21626A8500553780 /* Settings.swift */,
 				2E08E0042162629A00553780 /* Memorys.swift */,
+				296D76BF2234C4F800358FB0 /* AddMemoryViewController.swift */,
 				8CDEA7DB2073D1E90023BDD6 /* Main.storyboard */,
 				8CDEA7DE2073D1E90023BDD6 /* Assets.xcassets */,
 				8CDEA7E02073D1E90023BDD6 /* LaunchScreen.storyboard */,
 				8CDEA7E32073D1E90023BDD6 /* Info.plist */,
-				2E92BB70207EF3FD002556B5 /* UXNavigationController.swift */,
 			);
 			path = SweetLove;
 			sourceTree = "<group>";
@@ -329,11 +329,11 @@
 			files = (
 				2E08DFFD216258B300553780 /* TopBarView.swift in Sources */,
 				2E08E003216261F800553780 /* Contents.swift in Sources */,
-				2E92BB71207EF3FD002556B5 /* UXNavigationController.swift in Sources */,
 				29AC61CA22339686002563A9 /* PaddingHelper.swift in Sources */,
 				8CDEA8062073D4FF0023BDD6 /* Utils.swift in Sources */,
 				8CDEA7DA2073D1E90023BDD6 /* ViewController.swift in Sources */,
 				2E08E0052162629A00553780 /* Memorys.swift in Sources */,
+				296D76C02234C4F800358FB0 /* AddMemoryViewController.swift in Sources */,
 				2E08E00B21626A8500553780 /* Settings.swift in Sources */,
 				2E08E0072162632E00553780 /* MainView.swift in Sources */,
 				8CDEA7D82073D1E90023BDD6 /* AppDelegate.swift in Sources */,
