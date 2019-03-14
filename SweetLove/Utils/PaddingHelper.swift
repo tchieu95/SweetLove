@@ -18,6 +18,6 @@ class PaddingHelper {
     static let circleHoriPadding: CGFloat = 70.0
     
     // Add memory
-    static let leftAddMemoryPadding: CGFloat = 20.0
+    static let leftAddMemoryPadding: CGFloat = 30.0
     static let topAddMemoryPadding: CGFloat = 70.0
 }
