@@ -75,7 +75,7 @@ class AddMemoryViewController: UIViewController, UITextViewDelegate, UINavigatio
     
     @objc func donedatePicker(){
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd/MM/yyyy"
+        formatter.dateFormat = Date.sweetLoveDateFormat
         memoryDateTextView?.text = formatter.string(from: datePicker.date)
         view.endEditing(true)
     }
@@ -152,8 +152,13 @@ class AddMemoryViewController: UIViewController, UITextViewDelegate, UINavigatio
         saveBtn?.layer.cornerRadius = textHeight / 3.0
         saveBtn?.setTitleColor(UIColor.black, for: .normal)
         saveBtn?.backgroundColor = Utils.getLightGrayBackgroundColor()
+        saveBtn?.addTarget(self, action: #selector(self.saveBtnTap), for: .touchDown)
         
         view.addSubview(saveBtn!)
+    }
+    
+    @objc func saveBtnTap() {
+        
     }
 }
 

@@ -10,8 +10,11 @@
 		292795A0222FC4CE00ED8A73 /* Woman.png in Resources */ = {isa = PBXBuildFile; fileRef = 2927959E222FC4CE00ED8A73 /* Woman.png */; };
 		292795A1222FC4CE00ED8A73 /* Man.png in Resources */ = {isa = PBXBuildFile; fileRef = 2927959F222FC4CE00ED8A73 /* Man.png */; };
 		296D76C02234C4F800358FB0 /* AddMemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296D76BF2234C4F800358FB0 /* AddMemoryViewController.swift */; };
+		2973BBAD223DF77200B35513 /* Albums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2973BBAC223DF77200B35513 /* Albums.swift */; };
 		29AC61C822339637002563A9 /* addMemory.png in Resources */ = {isa = PBXBuildFile; fileRef = 29AC61C722339637002563A9 /* addMemory.png */; };
 		29AC61CA22339686002563A9 /* PaddingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AC61C922339686002563A9 /* PaddingHelper.swift */; };
+		29D7D14F2238EEFD00BDD107 /* capture_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D7D14E2238EEFD00BDD107 /* capture_photo.png */; };
+		29FD310622433E85000BDEB5 /* SweetLoveModels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29FD310422433E85000BDEB5 /* SweetLoveModels.xcdatamodeld */; };
 		2E08DFFD216258B300553780 /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E08DFFC216258B300553780 /* TopBarView.swift */; };
 		2E08DFFF21625D3500553780 /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E08DFFE21625D3500553780 /* note.png */; };
 		2E08E0012162608000553780 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E08E0002162608000553780 /* setting.png */; };
@@ -52,8 +55,11 @@
 		2927959E222FC4CE00ED8A73 /* Woman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Woman.png; sourceTree = "<group>"; };
 		2927959F222FC4CE00ED8A73 /* Man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Man.png; sourceTree = "<group>"; };
 		296D76BF2234C4F800358FB0 /* AddMemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemoryViewController.swift; sourceTree = "<group>"; };
+		2973BBAC223DF77200B35513 /* Albums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Albums.swift; sourceTree = "<group>"; };
 		29AC61C722339637002563A9 /* addMemory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addMemory.png; sourceTree = "<group>"; };
 		29AC61C922339686002563A9 /* PaddingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingHelper.swift; sourceTree = "<group>"; };
+		29D7D14E2238EEFD00BDD107 /* capture_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = capture_photo.png; sourceTree = "<group>"; };
+		29FD310522433E85000BDEB5 /* SweetLoveModels.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SweetLoveModels.xcdatamodel; sourceTree = "<group>"; };
 		2E08DFFC216258B300553780 /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
 		2E08DFFE21625D3500553780 /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
 		2E08E0002162608000553780 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
@@ -112,6 +118,7 @@
 				2E08DFFE21625D3500553780 /* note.png */,
 				2E08E0082162656400553780 /* circle.png */,
 				8CB0E00E2078A3CC00A1D4EF /* loveBG.jpg */,
+				29D7D14E2238EEFD00BDD107 /* capture_photo.png */,
 				2927959F222FC4CE00ED8A73 /* Man.png */,
 				2927959E222FC4CE00ED8A73 /* Woman.png */,
 			);
@@ -144,6 +151,7 @@
 				8C417DBE20786A5C009EC4B4 /* Resources */,
 				8CDEA8072073D8E80023BDD6 /* Utils */,
 				8CDEA7D72073D1E90023BDD6 /* AppDelegate.swift */,
+				29FD310422433E85000BDEB5 /* SweetLoveModels.xcdatamodeld */,
 				8CDEA7D92073D1E90023BDD6 /* ViewController.swift */,
 				2E08DFFC216258B300553780 /* TopBarView.swift */,
 				2E08E0062162632E00553780 /* MainView.swift */,
@@ -155,6 +163,7 @@
 				8CDEA7DE2073D1E90023BDD6 /* Assets.xcassets */,
 				8CDEA7E02073D1E90023BDD6 /* LaunchScreen.storyboard */,
 				8CDEA7E32073D1E90023BDD6 /* Info.plist */,
+				2973BBAC223DF77200B35513 /* Albums.swift */,
 			);
 			path = SweetLove;
 			sourceTree = "<group>";
@@ -299,6 +308,7 @@
 				2E08E0012162608000553780 /* setting.png in Resources */,
 				8CDEA7E22073D1E90023BDD6 /* LaunchScreen.storyboard in Resources */,
 				2E08E0092162656400553780 /* circle.png in Resources */,
+				29D7D14F2238EEFD00BDD107 /* capture_photo.png in Resources */,
 				8CDEA7DF2073D1E90023BDD6 /* Assets.xcassets in Resources */,
 				292795A1222FC4CE00ED8A73 /* Man.png in Resources */,
 				292795A0222FC4CE00ED8A73 /* Woman.png in Resources */,
@@ -332,6 +342,8 @@
 				29AC61CA22339686002563A9 /* PaddingHelper.swift in Sources */,
 				8CDEA8062073D4FF0023BDD6 /* Utils.swift in Sources */,
 				8CDEA7DA2073D1E90023BDD6 /* ViewController.swift in Sources */,
+				2973BBAD223DF77200B35513 /* Albums.swift in Sources */,
+				29FD310622433E85000BDEB5 /* SweetLoveModels.xcdatamodeld in Sources */,
 				2E08E0052162629A00553780 /* Memorys.swift in Sources */,
 				296D76C02234C4F800358FB0 /* AddMemoryViewController.swift in Sources */,
 				2E08E00B21626A8500553780 /* Settings.swift in Sources */,
