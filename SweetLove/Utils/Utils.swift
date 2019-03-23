@@ -84,3 +84,17 @@ extension FloatingPoint {
     var degreesToRadians: Self { return self * .pi / 180 }
     var radiansToDegrees: Self { return self * 180 / .pi }
 }
+
+
+extension Date
+{
+    static let sweetLoveDateFormat:String = "dd/MM/yyyy"
+    
+    func toString(dateFormat format: String) -> String
+    {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        return dateFormatter.string(from: self)
+    }
+    
+}
