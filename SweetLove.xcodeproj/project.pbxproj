@@ -646,6 +646,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		29FD310422433E85000BDEB5 /* SweetLoveModels.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				29FD310522433E85000BDEB5 /* SweetLoveModels.xcdatamodel */,
+			);
+			currentVersion = 29FD310522433E85000BDEB5 /* SweetLoveModels.xcdatamodel */;
+			path = SweetLoveModels.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8CDEA7CC2073D1E90023BDD6 /* Project object */;
 }
